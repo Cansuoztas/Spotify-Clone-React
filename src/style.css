@@ -629,6 +629,13 @@ html, body, #root {
   position: relative;
 }
 
+.inset-0 {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
 .top-full {
   top: 100%;
 }
@@ -850,6 +857,10 @@ html, body, #root {
   --tw-gradient-to: #93c5fd;
 }
 
+.object-cover {
+  object-fit: cover;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -902,6 +913,10 @@ html, body, #root {
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pt-\[100\%\] {
+  padding-top: 100%;
 }
 
 .text-2xl {

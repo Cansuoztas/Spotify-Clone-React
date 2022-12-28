@@ -4,7 +4,7 @@ import { Icon } from "Icons";
 function Auth() {
 
     const user = {
-        name: 'F.Cansu OZTAS',
+        name: 'F.Cansu Oztas',
         avatar: 'https://st4.depositphotos.com/1000507/23839/v/450/depositphotos_238399106-stock-illustration-female-user-profile-isolated-white.jpg'
     }
 
