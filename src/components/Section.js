@@ -1,7 +1,7 @@
 import { Icon } from "Icons"
 import { NavLink } from "react-router-dom"
 
-function Section({title, more : boolean = false, items}) {
+function Section({title,more, more : boolean = false, items}) {
 
     const imageStyle=item =>{
         switch(item.type){
