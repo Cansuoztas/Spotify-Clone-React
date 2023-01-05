@@ -2,16 +2,18 @@
 @tailwind utilities;
 @tailwind components;
 
-@layer base{
+@layer base {
     html, body, #root {
-        @apply h-full bg-backdrop text-white antialiased;
+        @apply h-full bg-backdrop text-white antialiased
     }
-     #root {
+    #root {
         @apply flex flex-col
-     }
-     .wrapper {
+    }
+    .wrapper {
         height: calc(100% - theme('spacing.24'));
         @apply flex
-     }
-
+    }
+    .scrollable {
+        scroll-behavior: smooth;
+    }
 }

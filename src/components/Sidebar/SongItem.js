@@ -36,7 +36,7 @@ return(
                              
                              onClick={updateCurrent}
                              className="w-10 h-10 rounded-full bg-primary absolute group-hover:block group-focus:flex bottom-2 right-2  items-center justify-center hidden ">
-                                <Icon name="play" size={16}/>
+                                <Icon name={current ?.id === item.id ? 'pause' : 'play' }  size={16}/>
                              </button>
                              </div>
                         <h6 className="overflow-hidden overflow-ellipsis whitespace-nowrap text-base font-semibold">

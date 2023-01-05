@@ -5,7 +5,7 @@ import { secondsToTime } from "utils";
 import CustomRange from "components/CustomRange";
 import { useDispatch, useSelector } from "react-redux";
 import { setControls, setPlaying, setSidebar } from "redux/reducers/playerSlice";
-// import FullScreenPlayer from "components/FullScreenPlayer";
+import FullScreenPlayer from "components/FullScreenPlayer";
 
 export default function Player() {
 
