@@ -1,20 +1,19 @@
-import Navigation from "./Navbar/Navigation";
-import Auth from "./Navbar/Auth";
-import {useMatch} from "react-router-dom";
+import Navigation from "./Navbar/Navigation"
+import Auth from "./Navbar/Auth"
+import { useLocation, useParams } from "react-router-dom"
+import Search from "./Navbar/Search"
 
+export default function Navbar() {
 
-function Navbar() {
+    const {pathname} =useLocation()
 
-	const searchRoute = useMatch('/search')
+  return (
+    <nav className='h-[3.75rem] px-8 flex items-center justify-between'>
+        <Navigation />
 
-	return (
-		<nav className="h-[3.75rem] flex items-center justify-between px-8 relative z-10">
-			<Navigation />
+        {pathname  && <Search />}
 
-	
-			<Auth />
-		</nav>
-	)
+        <Auth />
+    </nav>
+  )
 }
-
-export default Navbar
