@@ -726,6 +726,10 @@ html, body, #root {
   right: -1.5rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -851,6 +855,10 @@ html, body, #root {
   height: 3rem;
 }
 
+.h-\[6\.25rem\] {
+  height: 6.25rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -911,6 +919,10 @@ html, body, #root {
   width: 22.75rem;
 }
 
+.w-\[6\.25rem\] {
+  width: 6.25rem;
+}
+
 .min-w-\[11\.25rem\] {
   min-width: 11.25rem;
 }
@@ -943,6 +955,18 @@ html, body, #root {
           transform: var(--tw-transform);
 }
 
+.translate-x-\[18\%\] {
+  --tw-translate-x: 18%;
+  -webkit-transform: var(--tw-transform);
+          transform: var(--tw-transform);
+}
+
+.translate-y-\[5\%\] {
+  --tw-translate-y: 5%;
+  -webkit-transform: var(--tw-transform);
+          transform: var(--tw-transform);
+}
+
 .rotate-180 {
   --tw-rotate: 180deg;
   -webkit-transform: var(--tw-transform);
@@ -951,6 +975,12 @@ html, body, #root {
 
 .-rotate-90 {
   --tw-rotate: -90deg;
+  -webkit-transform: var(--tw-transform);
+          transform: var(--tw-transform);
+}
+
+.rotate-\[25deg\] {
+  --tw-rotate: 25deg;
   -webkit-transform: var(--tw-transform);
           transform: var(--tw-transform);
 }
@@ -1270,6 +1300,10 @@ html, body, #root {
   letter-spacing: -0.025em;
 }
 
+.tracking-tighter {
+  letter-spacing: -0.05em;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -1336,6 +1370,16 @@ html, body, #root {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+}
+
+.before\:block::before {
+  content: "";
+  display: block;
+}
+
+.before\:pt-\[100\%\]::before {
+  content: "";
+  padding-top: 100%;
 }
 
 .hover\:scale-\[1\.06\]:hover {

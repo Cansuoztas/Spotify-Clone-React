@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom';
 import { Icon } from "Icons";
 import { useSelector } from "react-redux";
 import { secondsToTime } from "utils";

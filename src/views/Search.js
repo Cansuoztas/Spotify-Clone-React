@@ -1,15 +1,15 @@
-import categories from "data/categories";
-import favoriteCategories from "data/favorite-categories"
 import Title from "components/Title";
+import categories from "data/categories";
+import favoriteCategories from "data/favorite-categories";
+import { useEffect, useRef, useState } from "react";
 import ScrollContainer from 'react-indiana-drag-scroll'
-import {useEffect, useRef, useState} from "react";
-import {Icon} from "Icons";
-import Category from "components/CategoryItem"
-import WideCategory from "components/WideCategoryItem"
+import { Icon } from "Icons";
+import Category from "CategoryItem";
+import WideCategory from "WideCategoryItem";
 
 function Search() {
 
-	const favoritesRef = useRef()
+  const favoritesRef = useRef()
 	const [prev, setPrev] = useState(false)
 	const [next, setNext] = useState(false)
 
@@ -65,5 +65,4 @@ function Search() {
 		</>
 	)
 }
-
-export default Search
+export default Search;
