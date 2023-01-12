@@ -1,10 +1,9 @@
+import React from 'react'
 
-function Collection() {
+export default function Collection() {
   return (
- <div>
-    burası kitaplık
- </div>
+    <div>
+      burasi kitaplik sayfasi
+    </div>
   )
 }
-
-export default Collection

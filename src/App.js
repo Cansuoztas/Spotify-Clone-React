@@ -10,7 +10,7 @@ function App() {
         <Sidebar/>
         <Content/>
       </div>
-        <Footer/>
+      <Footer/>
     </Router>
   );
 }
