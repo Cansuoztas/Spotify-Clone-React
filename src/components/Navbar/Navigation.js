@@ -1,20 +1,22 @@
-import { Icon } from "Icons";
-import  {  useNavigate }  from "react-router-dom";
 
 function Navigation() {
-
-    const navigate = useNavigate()
-
     return (
-        <nav className="flex items-center gap-x-4">
-            <button onClick={() => navigate(-1)} className="w-8 h-8 flex items-center justify-center rounded-full bg-black bg-opacity-70">
-                <Icon size={22} name="prev" />
-            </button>
-            <button onClick={() => navigate(1)} className="w-8 h-8 flex items-center justify-center rounded-full bg-black bg-opacity-70">
-                <Icon size={22} name="next" />
-            </button>
+        <nav className="mx-6 mt-4 py-2 flex-auto border-t border-opacity-20  border-white overflow-auto
+        scrollbar-thin scrollbar-thumb-green-700 overflow-y-scroll scrollbar-track-transparent scrollbar-thumb-rounded-full scrollbar-track-slate-700 h-[400vh] ">
+          <ul >
+            {new Array(40).fill(
+              <li>
+                <a
+                  href="#"
+                  className="text-s  text-link hover:text-white flex h-8 items-center"
+                >
+                  22.Çalma Listesi
+                </a>
+              </li>
+            )}
+          </ul>
         </nav>
     )
-}
-
-export default Navigation
+  }
+  
+  export default Navigation

@@ -1,7 +1,7 @@
 import logo from "img/logo.svg"
 import { Icon } from "Icons"
 import Menu from "components/Sidebar/Menu"
-import Playlists from "components/Sidebar/Playlists"
+import Playlists from "components/Sidebar/Playlist"
 import DownloadApp from "components/Sidebar/DownloadApp"
 import {useSelector} from "react-redux";
 import SidebarCover from "./Sidebar/SidebarCover";
